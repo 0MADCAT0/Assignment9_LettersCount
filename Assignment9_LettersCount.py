@@ -15,7 +15,7 @@ def letr_count(s):
     a = set(s)
     for i in a:
         letr_count[i] = s.count(i)
-    return letr_count
+    return dict(sorted(letr_count.items()))
 
 
 print(letr_count(sntnc))
